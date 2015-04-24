@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= locals.title
+  body
+    header#header
+      h1#logo= page.title
+    section#page
+      != page.html
+    nav#menu.menu.clearfix
+      ul
+        li.button
+          a(href='/') Home
+        li.button
+          a(href='/about') About
+        li.button
+          a(href='/services') Services
+        li.button
+          a(href='/contact') Contact Us
+    footer#bottom
+      div.wrap
+        p
+          Copyright &copy; 2011 CyberStride
+
