@@ -2,10 +2,10 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title= locals.title
+    title= page.title
   body
     header#header
-      h1#logo= page.title
+      h1#logo= page.metadata.header
     section#page
       != page.html
     nav#menu.menu.clearfix
