@@ -1,7 +1,8 @@
 ---
 title: About the Company
 header: Geeks by trade, entrepreneurs at heart.
-template: index.jade
+template: page.jade
+id: about
 ---
 
 "Cyberstride" was originally the name of complex modeling software written back in the 70's to optimize the economy of Chile. This spirit of idealism and innovation is what inspired us to take the name for our company.

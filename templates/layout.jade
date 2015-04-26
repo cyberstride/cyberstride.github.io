@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= page.title
+    link(rel='stylesheet', href='/vendor/foundation/css/normalize.css')
+    link(rel='stylesheet', href='/vendor/foundation/css/foundation.css')
+    link(rel='stylesheet', href='/vendor/foundation-icon-fonts/foundation-icons.css')
+    link(rel='stylesheet', href='/styles/main.css')
+    script(src='/vendor/foundation/js/vendor/modernizr.js')
+  body(id=page.metadata.id)
+    div.off-canvas-wrap(data-offcanvas='')
+      main.inner-wrap
+        div.row.display.small-collapse
+          div.columns.small-3
+            a.left-off-canvas-toggle.menu-icon(href='#')
+              i.fi-list.large
+          div.columns.small-6
+            h2#brand.text-center
+              a(href='/',title=locals.brand)
+                img(src='/img/logo.png', alt='locals.brand')
+          div.columns.small-2
+            ul.inline-list.right
+              li
+                a(href='/')
+                  i.fi-social-google-plus.large
+              li
+                a(href='/')
+                  i.fi-social-twitter.large
+        aside.left-off-canvas-menu
+          ul.off-canvas-list
+            li
+              label CyberStride Links
+            li
+              a(href='/about.html') About Us
+            li
+              a(href='/services.html') Services
+            li
+              a(href='/contact.html') Contact Us
+
+        block content
+    footer#bottom
+      div.wrap.row
+        p
+          Copyright &copy; 2011 CyberStride
+        div.scripts
+          script(src='/vendor/jquery/dist/jquery.min.js')
+          script(src='/vendor/foundation/js/foundation.min.js')
+          script(src='/scripts/main.js')
+

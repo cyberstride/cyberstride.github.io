@@ -1,7 +1,8 @@
 ---
 title: Services in Software Development & Business Consulting - CyberStride
 header: Have a startup? Awesome! We'd love to help.
-template: index.jade
+template: page.jade
+id: services
 ---
 
 {business consulting}

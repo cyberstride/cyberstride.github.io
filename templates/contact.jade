@@ -1,0 +1,13 @@
+extends ./layout.jade
+
+block content
+  div.row
+    form(action='//formspree.io/site@cyberstride.net',method='POST')
+      div.row
+        input(name='email', type='email', placeholder='Your Email')
+      div.row
+        textarea(name='body', placeholder='What do you want to know?')
+      input(type='hidden', name='_next', value='//cyberstride.com/thanks.html')
+      input(type='hidden', name='_subject', value='CyberStride.com Inquiry')
+      div.row
+        button.button(type='submit') Send
