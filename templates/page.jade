@@ -1,4 +1,6 @@
 extends ./layout.jade
 
 block content
+  header.row 
+    h1= page.metadata.header
   section#page.row!= page.html

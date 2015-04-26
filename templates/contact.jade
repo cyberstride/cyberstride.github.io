@@ -1,7 +1,10 @@
 extends ./layout.jade
 
 block content
-  div.row
+  header.row
+    h1 Contact
+  section.row
+    p Get in touch with us. Just use the form below and we'll get back to you as soon as we can.
     form(action='//formspree.io/site@cyberstride.net',method='POST')
       div.row
         input(name='email', type='email', placeholder='Your Email')
@@ -10,4 +13,4 @@ block content
       input(type='hidden', name='_next', value='//cyberstride.com/thanks.html')
       input(type='hidden', name='_subject', value='CyberStride.com Inquiry')
       div.row
-        button.button(type='submit') Send
+        button.button(type='submit') Send Message
