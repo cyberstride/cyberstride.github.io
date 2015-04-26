@@ -10,36 +10,31 @@ html(lang='en')
     link(rel='stylesheet', href='/styles/main.css')
     script(src='/vendor/foundation/js/vendor/modernizr.js')
   body(id=page.metadata.id)
-    div.off-canvas-wrap(data-offcanvas='')
-      main.inner-wrap
-        div.row.display.small-collapse
-          div.columns.small-3
-            a.left-off-canvas-toggle.menu-icon(href='#')
-              i.fi-list.large
-          div.columns.small-6
-            h2#brand.text-center
-              a(href='/',title=locals.brand)
-                img(src='/img/logo.png', alt='locals.brand')
-          div.columns.small-2
-            ul.inline-list.right
-              li
-                a(href='/')
-                  i.fi-social-google-plus.large
-              li
-                a(href='/')
-                  i.fi-social-twitter.large
-        aside.left-off-canvas-menu
-          ul.off-canvas-list
-            li
-              label CyberStride Links
-            li
-              a(href='/about.html') About Us
-            li
-              a(href='/services.html') Services
-            li
-              a(href='/contact.html') Contact Us
+    div.row.display.small-collapse
+      div.columns.small-3
+        a.menu-icon(href='#', data-dropdown='main_menu', aria-controls='main_menu', aria-expanded='false')
+          i.fi-list.icon-large
+      div.columns.small-6
+        h2#brand.text-center
+          a(href='/',title=locals.brand)
+            img(src='/img/logo.png', alt='locals.brand')
+      div.columns.small-2
+        ul.inline-list.right
+          li
+            a(href='/')
+              i.fi-social-google-plus.icon-medium
+          li
+            a(href='/')
+              i.fi-social-twitter.icon-medium
+    ul#main_menu.menu.f-dropdown(data-dropdown-content='', aria-hidden='true', tabindex='-1')
+      li
+        a.fi-torso-business.icon-small(href='/about.html') About Us
+      li
+        a.fi-wrench.icon-small(href='/services.html') Services
+      li
+        a.fi-mail.icon-small(href='/contact.html') Contact Us
 
-        block content
+    block content
     footer#bottom
       div.wrap.row
         p
