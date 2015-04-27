@@ -1,3 +1,6 @@
+body {
+  background: #F5F5F5;
+}
 #home #page {
   padding-top: 10%;
   text-align: center;
@@ -56,4 +59,7 @@ button,
   content: '\f126';
   color: #228b22;
   margin-right: 5px;
+}
+a.menu-icon {
+  text-shadow: 2px 2px #708090;
 }
